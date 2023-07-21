@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.bg-c-brown {
+  background-color: #4a1831;
+}
+.c-brown {
+  color: #4a1831;
+}
+.c-light {
+  color: #ffd7ad;
+}
+.bg-c-light {
+  background-color: #ffd7ad;
+}
+.c-white {
+  color: #fff;
+}
+.f-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+}
+.gen-btn {
+  width: 322px;
+  height: 65px;
+  border-radius: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  transition: .5s;
+}
+.gen-btn:hover{
+  background-color: #e63956;
+  color: #fff;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+}
+a{
+  text-decoration: none!important;
+  color: #ffd7ad;
+}
+.mariachi .container,
+.about .container,
+.tacoes .container,
+.offer .container,
+.footer .container {
+  max-width: 100%;
+}
+.header .row,
+.header .col-lg-9{
+  justify-content: center;
+}
+.icon{
+  display: none;
+}
+.menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  padding: 0 23px;
+}
+.menu-list li a{
+  font-size: 25px;
+}
+.menu-list li a:hover{
+  color: #fff;
+}
+.navbar{
+  justify-content: center;
+}
+.close-btn{
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+@media (max-width:1200px) {
+  .menu-list li {
+    padding: 0 11px;
+}
+  
+}
+@media (max-width:991px){
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .menu-list{
+    position: fixed;
+    display: block;
+    left: -100%;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #4a1831;
+    padding-top: 50px;
+  }
+  .menu-list.active{
+    left: 0;
+  }
+  .header {
+    position: fixed;
+    top: 15px;
+    right: 0px;
+    z-index: 1;
+}
+.header.ht{
+  height: 0;
+  background-color: #4a1831;
+}
+}
+
+
+.mariachi {
+  background-image: url("mariachi.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 796px;
+  width: 100%;
+  padding: 60px;
+  overflow: hidden;
+}
+.m-logo img {
+  width: auto;
+}
+.m-content {
+  padding-top: 35px;
+}
+.m-content h1 {
+  font-size: 125px;
+  margin-top: 42px;
+}
+.m-content p {
+  font-size: 30px;
+  line-height: 1.1;
+  hyphens: auto;
+}
+.m-content button {
+  margin-top: 37px;
+}
+.menu {
+  padding-top: 100px;
+  padding-bottom: 85px;
+}
+.menu-content h1 {
+  font-size: 64px;
+}
+.menu-content p {
+  font-size: 25.23px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 37px 0;
+}
+.menu-content button {
+  margin-top: 20px;
+}
+.about {
+  padding: 60px;
+}
+.a-image {
+  padding: 15px;
+  margin-right: 40px;
+}
+.a-content h1 {
+  font-size: 75px;
+}
+.a-content p {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 32px 0 42px 0;
+}
+.t-image {
+  width: 77%;
+  margin-left: auto;
+  margin-right: 0px;
+}
+.tacoes {
+  position: relative;
+  padding-right: 60px;
+  padding-top: 60px;
+}
+.tacoes .col-lg-12 {
+  display: flex;
+}
+.t-content {
+  position: absolute;
+  top: 5%;
+  left: 80px;
+  z-index: 1;
+}
+.t-percent {
+  font-size: 167px;
+  font-weight: bolder;
+  color: #e63956;
+  margin: 0;
+  line-height: 0.8;
+}
+.t-dis span {
+  font-size: 65px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #4a1831;
+  line-height: 0.8;
+}
+.t-on {
+  font-size: 95px;
+  text-transform: uppercase;
+  color: #6cc5ac;
+  font-weight: 900;
+  line-height: 0.8;
+}
+.tacoes span {
+  margin-bottom: 0;
+}
+.offer {
+  padding: 110px 76px;
+}
+.offer-content h1 {
+  font-size: 75px;
+}
+.offer-content p {
+  font-size: 30px;
+  margin: 32px 0 42px 0;
+}
+.pedro {
+  background-image: url("pedro.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 92px 0 120px 0;
+  background-attachment: fixed;
+}
+.p-logo img {
+  width: 22%;
+  object-fit: cover;
+}
+.p-content p {
+  font-size: 43px;
+  line-height: 1.2;
+  margin: 50px 0 70px 0;
+  font-weight: 600;
+}
+.p-content h3 {
+  font-size: 44px;
+  font-weight: 800;
+}
+.latest {
+  padding: 200px 100px;
+}
+.latest .row {
+  justify-content: center;
+}
+.latest .row:last-child {
+  margin-top: 83px;
+}
+.l-content h1 {
+  font-size: 75px;
+  font-weight: 600;
+}
+.l-content p {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.email {
+  width: 71%;
+  height: 62px;
+  border-radius: 50px;
+  border: none;
+  padding-left: 30px;
+  outline: none;
+  font-size: 25px;
+}
+.submit {
+  width: 220px;
+  height: 62px;
+  margin-left: -112px;
+  border-radius: 50px;
+  border: none;
+  font-size: 25px;
+}
+.footer {
+  padding: 200px 85px;
+}
+.foot-content h4 {
+  font-size: 32px;
+  padding-bottom: 24px;
+}
+.foot-content p,
+.foot-content li {
+  font-size: 24px;
+}
+.foot-icon {
+  display: inline-flex;
+}
+.foot-icon i {
+  font-size: 20px;
+  color: #303030;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 12px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .f-box {
+    align-items: center;
+    text-align: center;
+  }
+  .t-on {
+    font-size: 65px;
+  }
+  .t-percent {
+    font-size: 137px;
+  }
+  .t-dis span {
+    font-size: 35px;
+  }
+  .latest {
+    padding: 60px 10px;
+  }
+  .footer {
+    text-align: center;
+     padding: 60px 85px;
+  }
+}
+@media (max-width: 768px) {
+  .gen-btn {
+    width: 220px;
+    font-size: 20px;
+  }
+  .m-content h1 {
+    font-size: 50px;
+  }
+  .menu-content h1,
+  .a-content h1,
+  .offer-content h1,
+  .l-content h1 {
+    font-size: 35px;
+  }
+  .foot-content p,
+  .foot-content li {
+    font-size: 19px;
+  }
+  .footer {
+    padding: 60px 15px;
+  }
+  .t-percent{
+    font-size: 68px;
+  }
+  .t-dis span{
+    font-size: 25px;
+  }
+  .t-on{
+    font-size: 45px;
+  }
+}
+@media (max-width: 480px){
+  .mariachi{
+        min-height: 500px;
+  }
+    .menu-content h1,
+    .a-content h1,
+    .offer-content h1,
+    .l-content h1 ,
+    .p-content h3,
+    .foot-content h4{
+      font-size: 25px;
+    }
+    .m-content p,
+    .menu-content p,
+    .a-content p,
+    .offer-content p,
+    .p-content p,
+    .l-content p{
+        font-size: 15px;
+    }
+    
+
+.submit {
+    width: 171px;
+    margin-left: 0;
+    font-size: 18px;
+    margin-top: 10px;
+} 
+.gen-btn {
+    width: 157px;
+    height: 48px;
+    font-size: 17px;
+}
+.offer {
+    padding: 110px 15px;
+}
+.about {
+    padding: 15px;
+}
+.email{
+    width: 100%;
+    font-size: 20px;
+}
+.tacoes{
+    padding-right: 0;
+}
+}
